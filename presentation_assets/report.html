@@ -1,0 +1,156 @@
+
+<!doctype html>
+<html lang='tr'>
+<head>
+  <meta charset='utf-8'>
+  <title>Steam Dataset Raporu</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; }
+    h1 { margin-bottom: 4px; }
+    .meta { color: #555; margin-bottom: 16px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    img { border: 1px solid #ddd; padding: 8px; background: #fafafa; }
+  </style>
+</head>
+<body>
+  <h1>Steam Dataset Raporu</h1>
+  <div class='meta'>Dosya: c:\Users\ahmet\Desktop\ML_FinalProject\steam.csv • Satır: 25743 • Sütun: 18</div>
+  <h2>Sütunlar</h2>
+  <ul>
+    <li>appid</li><li>name</li><li>release_date</li><li>english</li><li>developer</li><li>publisher</li><li>platforms</li><li>required_age</li><li>categories</li><li>genres</li><li>steamspy_tags</li><li>achievements</li><li>positive_ratings</li><li>negative_ratings</li><li>average_playtime</li><li>median_playtime</li><li>owners</li><li>price;;;;;;;;;;;;;;;;;;;;;;;;</li>
+  </ul>
+  <h2>Örnek İlk 5 Satır</h2>
+  <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>appid</th>
+      <th>name</th>
+      <th>release_date</th>
+      <th>english</th>
+      <th>developer</th>
+      <th>publisher</th>
+      <th>platforms</th>
+      <th>required_age</th>
+      <th>categories</th>
+      <th>genres</th>
+      <th>steamspy_tags</th>
+      <th>achievements</th>
+      <th>positive_ratings</th>
+      <th>negative_ratings</th>
+      <th>average_playtime</th>
+      <th>median_playtime</th>
+      <th>owners</th>
+      <th>price;;;;;;;;;;;;;;;;;;;;;;;;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10</td>
+      <td>Counter-Strike</td>
+      <td>2000-11-01</td>
+      <td>1</td>
+      <td>Valve</td>
+      <td>Valve</td>
+      <td>windows;mac;linux</td>
+      <td>0</td>
+      <td>Multi-player;Online Multi-Player;Local Multi-Player;Valve Anti-Cheat enabled</td>
+      <td>Action</td>
+      <td>Action;FPS;Multiplayer</td>
+      <td>0</td>
+      <td>124534</td>
+      <td>3339</td>
+      <td>17612</td>
+      <td>317</td>
+      <td>10000000-20000000</td>
+      <td>7.19;;;;;;;;;;;;;;;;;</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Team Fortress Classic</td>
+      <td>1999-04-01</td>
+      <td>1</td>
+      <td>Valve</td>
+      <td>Valve</td>
+      <td>windows;mac;linux</td>
+      <td>0</td>
+      <td>Multi-player;Online Multi-Player;Local Multi-Player;Valve Anti-Cheat enabled</td>
+      <td>Action</td>
+      <td>Action;FPS;Multiplayer</td>
+      <td>0</td>
+      <td>3318</td>
+      <td>633</td>
+      <td>277</td>
+      <td>62</td>
+      <td>5000000-10000000</td>
+      <td>3.99;;;;;;;;;;;;;;;;;</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>Day of Defeat</td>
+      <td>2003-05-01</td>
+      <td>1</td>
+      <td>Valve</td>
+      <td>Valve</td>
+      <td>windows;mac;linux</td>
+      <td>0</td>
+      <td>Multi-player;Valve Anti-Cheat enabled</td>
+      <td>Action</td>
+      <td>FPS;World War II;Multiplayer</td>
+      <td>0</td>
+      <td>3416</td>
+      <td>398</td>
+      <td>187</td>
+      <td>34</td>
+      <td>5000000-10000000</td>
+      <td>3.99;;;;;;;;;;;;;;;;;;;</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>Deathmatch Classic</td>
+      <td>2001-06-01</td>
+      <td>1</td>
+      <td>Valve</td>
+      <td>Valve</td>
+      <td>windows;mac;linux</td>
+      <td>0</td>
+      <td>Multi-player;Online Multi-Player;Local Multi-Player;Valve Anti-Cheat enabled</td>
+      <td>Action</td>
+      <td>Action;FPS;Multiplayer</td>
+      <td>0</td>
+      <td>1273</td>
+      <td>267</td>
+      <td>258</td>
+      <td>184</td>
+      <td>5000000-10000000</td>
+      <td>3.99;;;;;;;;;;;;;;;;;</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>Half-Life: Opposing Force</td>
+      <td>1999-11-01</td>
+      <td>1</td>
+      <td>Gearbox Software</td>
+      <td>Valve</td>
+      <td>windows;mac;linux</td>
+      <td>0</td>
+      <td>Single-player;Multi-player;Valve Anti-Cheat enabled</td>
+      <td>Action</td>
+      <td>FPS;Action;Sci-fi</td>
+      <td>0</td>
+      <td>5250</td>
+      <td>288</td>
+      <td>624</td>
+      <td>415</td>
+      <td>5000000-10000000</td>
+      <td>3.99;;;;;;;;;;;;;;;;;;</td>
+    </tr>
+  </tbody>
+</table>
+  <h2>Görseller</h2>
+  <div class='grid'>
+    <div><h3>Yila Gore Oyun Sayisi</h3><img src='figures/yila_gore_oyun_sayisi.png' style='max-width:800px'></div><div><h3>Success Scatter</h3><img src='figures/success_scatter.png' style='max-width:800px'></div><div><h3>Success Class Counts</h3><img src='figures/success_class_counts.png' style='max-width:800px'></div>
+  </div>
+  <p>Detaylı tablo ve metrikler için <strong>summary.xlsx</strong> dosyasına bakabilirsiniz.</p>
+</body>
+</html>
